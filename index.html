@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" href="css/mdui.min.css">
+    <script src="js/mdui.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <!--引入自定义css-->
+
+   
+</head>
+<body style="position: relative">
+
+<!--应用栏-->
+<div class="mdui-appbar mdui-shadow-0 mdui-color-blue-grey">
+  <div class="mdui-toolbar mdui-text-color-white">
+    <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target: '#left-drawer'}">
+      <i class="mdui-icon material-icons">menu</i>
+    </button>
+    <div class="mdui-toolbar-spacer"></div>
+  </div>
+</div>
+
+
+<!--抽屉栏导航-->
+
+<div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close mdui-drawer-size mdui-list-size"  id="left-drawer" >
+
+	<!--头像卡片-->
+
+  <div  style=" height: 35%; background: #3F51B5 url('img/backGround.jpg');">
+                <img class="mdui-img-circle logo mdui-m-l-3 mdui-m-t-4" src=""/>
+                  <div class="mdui-card-menu">
+		            	<button class="mdui-btn mdui-btn-icon mdui-text-color-white" id="menuOpen" mdui-drawer-close>
+		            	    <i class="mdui-icon material-icons">arrow_back</i>
+		            	</button>
+		          </div>
+                <div class="mdui-typo mdui-m-l-4">
+                    <h4 class="mdui-text-color-white mdui-m-t-2 name-mail-line-height"><strong>Kevin Blog</strong></h4>
+                    <p class="mdui-text-color-white mdui-m-t-0 name-mail-line-height">test@test.com</p>
+                </div>
+            </div>
+
+
+  <!--分支选项-->
+  <ul class="mdui-list ">
+    <li class="mdui-list-item mdui-ripple mdui-collapse-item mdui-collapse-item-open">
+      <i class="mdui-list-item-icon mdui-icon material-icons">move_to_inbox</i>
+      <div class="mdui-list-item-content">Inbox</div>
+    </li>
+    <li class="mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">star</i>
+      <div class="mdui-list-item-content">Starred</div>
+    </li>
+    <li class="mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+      <div class="mdui-list-item-content">Sent mail</div>
+    </li>
+    <li class="mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">drafts</i>
+      <div class="mdui-list-item-content">Drafts</div>
+    </li>
+    <li class="mdui-subheader">Subheader</li>
+    <li class="mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">email</i>
+      <div class="mdui-list-item-content">All mail</div>
+    </li>
+    <li class="mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">delete</i>
+      <div class="mdui-list-item-content">Trash</div>
+    </li>
+    <li class="mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+      <div class="mdui-list-item-content">Spam</div>
+    </li>
+  </ul>
+</div>
+
+
+<!--主题文章-->
+<div class="main-position">
+
+<div class="mdui-container doc-container mdui-m-t-4 ">
+  <div class="body-size">
+    <div class="mdui-card mdui-typo mdui-m-t-2 mdui-m-b-2 mdui-hoverable">
+      <div class="mdui-card-media div-cutImg">
+        <img class="cutImg" src="img/backGround.jpg" />
+        <div class="mdui-card-media-covered  mdui-card-media-covered-transparent">
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">
+              VeryNginx 是个非常有意思且便捷的 Nginx 扩展程序。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdui-card-primary mdui-color-grey-200">
+        <div class="mdui-card-content contentPadding mdui-typo-display-2-opacity mdui-color-grey-200">
+          子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
+          子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？
+        </div>
+        <div class="mdui-divider"></div>
+        <div class="mdui-card-primary-subtitle">
+          <i class="mdui-icon material-icons icon-size">access_time</i>2018-10-21
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mdui-container doc-container mdui-m-t-4">
+  <div class="body-size">
+    <div class="mdui-card mdui-typo mdui-m-t-2 mdui-m-b-2 mdui-hoverable">
+      <div class="mdui-card-media div-cutImg">
+        <img class="cutImg" src="img/backGround.jpg" />
+        <div class="mdui-card-media-covered  mdui-card-media-covered-transparent">
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">
+              VeryNginx 是个非常有意思且便捷的 Nginx 扩展程序。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdui-card-primary mdui-color-grey-200">
+        <div class="mdui-card-content contentPadding mdui-typo-display-2-opacity mdui-color-grey-200">
+          子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
+          子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？
+        </div>
+        <div class="mdui-divider"></div>
+        <div class="mdui-card-primary-subtitle">
+          <i class="mdui-icon material-icons icon-size">access_time</i>2018-10-21
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mdui-container doc-container mdui-m-t-4">
+  <div class="body-size">
+    <div class="mdui-card mdui-typo mdui-m-t-2 mdui-m-b-2 mdui-hoverable">
+      <div class="mdui-card-media div-cutImg">
+        <img class="cutImg" src="img/backGround.jpg" />
+        <div class="mdui-card-media-covered  mdui-card-media-covered-transparent">
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">
+              VeryNginx 是个非常有意思且便捷的 Nginx 扩展程序。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdui-card-primary mdui-color-grey-200">
+        <div class="mdui-card-content contentPadding mdui-typo-display-2-opacity mdui-color-grey-200">
+          子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
+          子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？
+        </div>
+        <div class="mdui-divider"></div>
+        <div class="mdui-card-primary-subtitle">
+          <i class="mdui-icon material-icons icon-size">access_time</i>2018-10-21
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="mdui-overlay mdui-overlay-show overlayShow-show "
+     style="display: none" id="overlayShow" style="z-index: 2000;"></div>
+</body>
+
+<script type="text/javascript">
+
+		<!--抽屉打开关闭图标-->
+		var drawer = document.getElementById('left-drawer');
+		drawer.addEventListener('open.mdui.drawer', function () {
+			$("#menu").css('display','none');
+			$("#overlayShow").css('display','block');
+
+		});
+
+		<!--抽屉关闭打开图标-->
+		drawer.addEventListener('closed.mdui.drawer', function () {
+			$("#menu").css('display','block');
+            $("#overlayShow").css('display','none');
+		});
+		
+
+		$(document).ready(function(){
+		<!--除抽屉外区域点击都关闭-->
+		var inst = new mdui.Drawer('#left-drawer');
+		$(document).mouseup(function(e){
+		  var _con = $("#left-drawer");   // 设置目标区域
+		  if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
+		     console.log('close');
+		     inst.close();
+		  }
+		});
+		});
+</script>
+
+<style type="text/css">
+    .main-position{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+       position: absolute;
+         left: 0;
+          right: 0;
+
+    }
+	.headBGSize{
+		width: 250px;
+		height: 250px;
+	}
+
+	.headImgLocation{
+		position: relative;
+		margin-left: -18px;
+	}
+
+	.appbarWidth{
+		width: 300px;
+	}
+    .body-size{
+      /*width: 900px;*/
+      margin-left:auto;
+      margin-right:auto;
+
+    }
+    .drawer-position{
+      position: absolute;
+
+    }
+    .div-cutImg{
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+    .cutImg{
+      margin: 0px 0 0 0;
+    }
+    .contentPadding{
+      padding-top: 0px;
+    }
+    .time-padding{
+      padding-left: 5px;
+    }
+    .icon-size{
+      font-size: 15px;
+    }
+    .mdui-drawer-size{
+      bottom: 0;
+
+      z-index: 5000;
+    }
+
+  /*. main-position{*/
+      /*width: 1000px;*/
+      /*height: 1000px;*/
+      /*background: red;*/
+      /*!*z-index: -1;*!*/
+      /*position: absolute;*/
+      /*right: 0px;*/
+  /*}*/
+
+
+
+
+</style>
+</html>
